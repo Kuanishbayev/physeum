@@ -5,6 +5,7 @@ import Registration from "./pages/Registration";
 import Dashboard from "./pages/Dashboard";
 import DashboardSignIn from "./pages/DashboardSignIn";
 import Quiz from "./pages/quizzes/Quiz";
+import TrueFalseQuiz from "./pages/quizzes/TrueFalseQuiz";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="registration" element={<Registration />} />
         <Route path="quiz" element={<Quiz />} />
+        <Route path="true-false-quiz" element={<TrueFalseQuiz />} />
       </Routes>
     </BrowserRouter>
   )

@@ -22,3 +22,25 @@ export const quiz = {
         },
     ]
 }
+
+export const trueFalseQuiz = {
+    topic: 'True or False',
+    perQuestionScore: 5,
+    questions: [
+        {
+            question: '4 + 4 = 8',
+            choices: ['True', 'False'],
+            correctAnswer: 'True',
+        },
+        {
+            question: 'Apple = Shiye',
+            choices: ['True', 'False'],
+            correctAnswer: 'False',
+        },
+        {
+            question: '"1" === 1',
+            choices: ['True', 'False'],
+            correctAnswer: 'False',
+        },
+    ]
+}

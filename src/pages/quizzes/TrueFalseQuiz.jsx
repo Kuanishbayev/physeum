@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { quiz } from '../../data/db'
+import { trueFalseQuiz } from '../../data/db'
 
-const Quiz = () => {
+const TrueFalseQuiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState('')
     const [result, setResult] = useState({
@@ -13,7 +13,7 @@ const Quiz = () => {
     const [showResult, setShowResult] = useState(false)
     const [showCorrect, setShowCorrect] = useState(false)
 
-    const {questions} = quiz
+    const {questions} = trueFalseQuiz
     const {question, choices, correctAnswer} = questions[activeQuestion]
 
 
@@ -22,7 +22,7 @@ const Quiz = () => {
       setSelectedAnswerIndex(null)
       setResult(prev => selectedAnswer ? {
         ...prev,
-        score: prev.score + quiz.perQuestionScore,
+        score: prev.score + trueFalseQuiz.perQuestionScore,
         correctAnswers: prev.correctAnswers + 1,
       } : {
         ...prev,
@@ -67,15 +67,10 @@ const Quiz = () => {
                     </div>
                     <p className='mb-10'>Choose the correct answer</p>
                     <p>{question}</p>
-                    <div className='space-y-2 mb-10 mt-6'>
+                    <div className='flex justify-center items-center gap-2 mb-10 mt-6'>
                       {
                         choices.map((answer, index) => (
-                          <div className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} flex items-center gap-2`} key={index} onClick={() => onAnswerSelected(answer, index)}>
-                            <div className='size-4 rounded-full shadow-[0_0_8px_0_#00000040_inset] flex justify-center items-center'>
-                              <div className={`rounded-full ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : ''} size-2`}></div>
-                            </div>
-                            <span className={`${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'text-red-500' : selectedAnswerIndex === index ? 'text-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'text-green-500' : ''}`}>{answer}</span>
-                          </div>
+                          <button className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} px-4 py-2 rounded ${selectedAnswerIndex === index  && 'border-4 border-blue-400'} ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : 'bg-[#D9D9D9]'}`} key={index} onClick={() => onAnswerSelected(answer, index)}>{answer}</button>
                         ))
                       }
                     </div>
@@ -111,4 +106,4 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default TrueFalseQuiz
