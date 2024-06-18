@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
+import { useState } from 'react'
 import { quiz } from '../../data/db'
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState('')
     const [result, setResult] = useState({
-        score: 0,
-        correctAnswers: 0,
-        wrongAnswers: 0,
+      score: 0,
+      correctAnswers: 0,
+      wrongAnswers: 0,
     })
     const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
     const [showResult, setShowResult] = useState(false)
@@ -19,32 +18,32 @@ const Quiz = () => {
 
 
     const onClickNext = () => {
-        setShowCorrect(false)
-        setSelectedAnswerIndex(null)
-        setResult(prev => selectedAnswer ? {
-            ...prev,
-            score: prev.score + 5,
-            correctAnswers: prev.correctAnswers + 1,
-        } : {
-            ...prev,
-            wrongAnswers: prev.wrongAnswers + 1
-        }
+      setShowCorrect(false)
+      setSelectedAnswerIndex(null)
+      setResult(prev => selectedAnswer ? {
+        ...prev,
+        score: prev.score + 5,
+        correctAnswers: prev.correctAnswers + 1,
+      } : {
+        ...prev,
+        wrongAnswers: prev.wrongAnswers + 1
+      }
     )
     if (activeQuestion !== questions.length - 1) {
-        setActiveQuestion(prev => prev + 1)
+      setActiveQuestion(prev => prev + 1)
     } else {
-        setActiveQuestion(0)
-        setShowResult(true)
+      setActiveQuestion(0)
+      setShowResult(true)
     }
     }
 
 
     const onAnswerSelected = (answer, index, e) => {
-        if (selectedAnswerIndex === null) {
-            setShowCorrect(answer !== correctAnswer)
-            setSelectedAnswerIndex(index)
-            setSelectedAnswer(answer === correctAnswer)
-        }
+      if (selectedAnswerIndex === null) {
+        setShowCorrect(answer !== correctAnswer)
+        setSelectedAnswerIndex(index)
+        setSelectedAnswer(answer === correctAnswer)
+      }
     }
 
 
