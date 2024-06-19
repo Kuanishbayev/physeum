@@ -57,7 +57,7 @@ const ImageQuiz = () => {
                 <div className='bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300' style={{width: `${Math.round(((activeQuestion + 1) / questions.length) * 100)}%`}}></div>
               </div>
               <div className='bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029] rounded-[8px] h-96 mb-10 lg:w-1/2 mx-auto'>
-                <img src={`./quiz-images/${image}`} alt="Quiz image" className='h-full mx-auto' />
+                <img src={`./quiz-images/${image}`} alt="Quiz image" className='h-full mx-auto object-contain' />
               </div>
             </>
           )
