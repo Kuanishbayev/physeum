@@ -136,7 +136,7 @@ const MatchingPairWordsQuiz = () => {
                       <div className='grid gap-6'>
                         {
                           leftSideWords.map((item, index) => (
-                            <button key={item} onClick={(e) => handleClick('left', e, index, item)} className={`w-40 h-16 text-white font-bold text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${leftClick === index ? 'clicked translate-y-2' : foundedWords.includes(item) ? 'translate-y-2' : '[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]'} disabled:clicked disabled:opacity-50`}>
+                            <button key={item} onClick={(e) => handleClick('left', e, index, item)} className={`w-28 h-12 md:w-40 md:h8 text-white font-bold md:text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${leftClick === index ? 'clicked translate-y-2' : foundedWords.includes(item) ? 'translate-y-2' : '[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]'} disabled:clicked disabled:opacity-50`}>
                               {item}
                             </button>
                           ))
@@ -145,7 +145,7 @@ const MatchingPairWordsQuiz = () => {
                       <div className='grid gap-6'>
                         {
                           rightSideWords.map((item, index) => (
-                            <button key={item} onClick={(e) => handleClick('right', e, index, item)} className={`w-40 h-16 text-white font-bold text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${rightClick === index ? 'clicked translate-y-2' : foundedWords.includes(item) ? 'translate-y-2' : '[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]'} disabled:clicked disabled:opacity-50`}>
+                            <button key={item} onClick={(e) => handleClick('right', e, index, item)} className={`w-28 h-12 md:w-40 md:h-16 text-white font-bold md:text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${rightClick === index ? 'clicked translate-y-2' : foundedWords.includes(item) ? 'translate-y-2' : '[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]'} disabled:clicked disabled:opacity-50`}>
                               {item}
                             </button>
                           ))
