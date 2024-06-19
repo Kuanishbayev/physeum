@@ -77,3 +77,28 @@ export const imageQuiz = {
         }
     ]
 }
+
+export const matchingPairWordsQuiz = {
+    topic: 'Image quiz',
+    perQuestionScore: 5,
+    questions: [
+        {
+            "Good": "Jaqsı",
+            "Ball": "Top",
+            "Smart": "Aqıllı",
+            "Ice": "Muz",
+        },
+        {
+            "Cat": "Pıshıq",
+            "Foot": "Ayaq",
+            "Dog": "Iyt",
+            "Bat": "Jarǵanat",
+        },
+        {
+            "Chalk": "Por",
+            "Tea": "Chay",
+            "Clever": "Aqıllı",
+            "Bag": "Sumka",
+        },
+    ]
+}

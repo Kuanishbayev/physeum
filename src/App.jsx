@@ -8,6 +8,7 @@ import Quiz from "./pages/quizzes/Quiz";
 import TrueFalseQuiz from "./pages/quizzes/TrueFalseQuiz";
 import MoreButtonsQuiz from "./pages/quizzes/MoreButtonsQuiz";
 import ImageQuiz from "./pages/quizzes/ImageQuiz";
+import MatchingPairWordsQuiz from "./pages/quizzes/MatchingPairWordsQuiz";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="true-false-quiz" element={<TrueFalseQuiz />} />
         <Route path="more-buttons-quiz" element={<MoreButtonsQuiz />} />
         <Route path="image-quiz" element={<ImageQuiz />} />
+        <Route path="matching-pair-words-quiz" element={<MatchingPairWordsQuiz />} />
       </Routes>
     </BrowserRouter>
   )
