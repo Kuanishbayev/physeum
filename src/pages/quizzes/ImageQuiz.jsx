@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { trueFalseQuiz } from '../../data/db'
+import { imageQuiz } from '../../data/db'
 
-const TrueFalseQuiz = () => {
+const ImageQuiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState('')
     const [result, setResult] = useState({
@@ -13,8 +13,8 @@ const TrueFalseQuiz = () => {
     const [showResult, setShowResult] = useState(false)
     const [showCorrect, setShowCorrect] = useState(false)
 
-    const {questions} = trueFalseQuiz
-    const {question, choices, correctAnswer} = questions[activeQuestion]
+    const {questions} = imageQuiz
+    const {question, choices, correctAnswer, image} = questions[activeQuestion]
 
 
     const onClickNext = () => {
@@ -22,7 +22,7 @@ const TrueFalseQuiz = () => {
       setSelectedAnswerIndex(null)
       setResult(prev => selectedAnswer ? {
         ...prev,
-        score: prev.score + trueFalseQuiz.perQuestionScore,
+        score: prev.score + imageQuiz.perQuestionScore,
         correctAnswers: prev.correctAnswers + 1,
       } : {
         ...prev,
@@ -52,9 +52,14 @@ const TrueFalseQuiz = () => {
         <div className='w-3/4 my-10'>
         {
           !showResult && (
-            <div className='border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto'>
-              <div className='bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300' style={{width: `${Math.round(((activeQuestion + 1) / questions.length) * 100)}%`}}></div>
-            </div>
+            <>
+              <div className='border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto'>
+                <div className='bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300' style={{width: `${Math.round(((activeQuestion + 1) / questions.length) * 100)}%`}}></div>
+              </div>
+              <div className='bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029] rounded-[8px] h-96 mb-10 lg:w-1/2 mx-auto'>
+                <img src={`./quiz-images/${image}`} alt="Quiz image" className='h-full mx-auto' />
+              </div>
+            </>
           )
         }
             <div className='shadow-[0_0_16px_0_#00000029] rounded-[8px] bg-white p-8'>
@@ -67,10 +72,15 @@ const TrueFalseQuiz = () => {
                     </div>
                     <p className='mb-10'>Choose the correct answer</p>
                     <p>{question}</p>
-                    <div className='flex justify-center items-center gap-2 mb-10 mt-6'>
+                    <div className='space-y-2 mb-10 mt-6'>
                       {
                         choices.map((answer, index) => (
-                          <button className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} px-4 py-2 rounded ${selectedAnswerIndex === index  && 'border-4 border-blue-400'} ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : 'bg-[#D9D9D9]'}`} key={index} onClick={() => onAnswerSelected(answer, index)}>{answer}</button>
+                          <div className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} flex items-center gap-2`} key={index} onClick={() => onAnswerSelected(answer, index)}>
+                            <div className='size-4 rounded-full shadow-[0_0_8px_0_#00000040_inset] flex justify-center items-center'>
+                              <div className={`rounded-full ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : ''} size-2`}></div>
+                            </div>
+                            <span className={`${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'text-red-500' : selectedAnswerIndex === index ? 'text-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'text-green-500' : ''}`}>{answer}</span>
+                          </div>
                         ))
                       }
                     </div>
@@ -106,4 +116,4 @@ const TrueFalseQuiz = () => {
   )
 }
 
-export default TrueFalseQuiz
+export default ImageQuiz

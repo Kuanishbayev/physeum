@@ -7,6 +7,7 @@ import DashboardSignIn from "./pages/DashboardSignIn";
 import Quiz from "./pages/quizzes/Quiz";
 import TrueFalseQuiz from "./pages/quizzes/TrueFalseQuiz";
 import MoreButtonsQuiz from "./pages/quizzes/MoreButtonsQuiz";
+import ImageQuiz from "./pages/quizzes/ImageQuiz";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="quiz" element={<Quiz />} />
         <Route path="true-false-quiz" element={<TrueFalseQuiz />} />
         <Route path="more-buttons-quiz" element={<MoreButtonsQuiz />} />
+        <Route path="image-quiz" element={<ImageQuiz />} />
       </Routes>
     </BrowserRouter>
   )

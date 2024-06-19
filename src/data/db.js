@@ -16,7 +16,7 @@ export const quiz = {
             question: 'Which of the following methods can be used to display data in some form using Javascript?',
             choices: ['document.write()', 'console.log()', 'window.alert', 'All of the above'],
             correctAnswer: 'All of the above',
-        },
+        }
     ]
 }
 
@@ -38,7 +38,7 @@ export const trueFalseQuiz = {
             question: '"1" === 1',
             choices: ['True', 'False'],
             correctAnswer: 'False',
-        },
+        }
     ]
 }
 
@@ -55,6 +55,25 @@ export const moreButtonsQuiz = {
             question: 'Hello __!',
             choices: ['world', 'baby', 'football', 'ball', 'ice', 'mouse', 'horse'],
             correctAnswer: 'world',
+        }
+    ]
+}
+
+export const imageQuiz = {
+    topic: 'Image quiz',
+    perQuestionScore: 5,
+    questions: [
+        {
+            image: "Bill-Gates-2011.png",
+            question: 'Who is that person?',
+            choices: ['Steve Jobs', 'Elon Musk', 'Bill Gates', 'None of the above'],
+            correctAnswer: 'Bill Gates',
+        },
+        {
+            image: "elon-musk.webp",
+            question: 'Tag the social network of the person in the picture?',
+            choices: ['Instagram', 'X', 'Facebook', 'VK'],
+            correctAnswer: 'X',
         }
     ]
 }

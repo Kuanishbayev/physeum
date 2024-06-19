@@ -48,8 +48,8 @@ const MoreButtonsQuiz = () => {
 
 
   return (
-    <div className='bg-[#F6F9FF] w-screen h-screen flex justify-center items-center'>
-        <div className='w-3/4'>
+    <div className='bg-[#F6F9FF] w-screen min-h-screen flex justify-center items-center'>
+        <div className='w-3/4 my-10'>
         {
           !showResult && (
             <div className='border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto'>
