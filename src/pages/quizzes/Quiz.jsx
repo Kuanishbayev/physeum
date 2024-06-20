@@ -61,8 +61,8 @@ const Quiz = () => {
               {
                 !showResult ? (
                   <>
-                    <div className='flex justify-between items-center'>
-                      <span className='text-blue-500 font-semibold text-3xl mb-4'>Test</span>
+                    <div className='flex justify-between items-center mb-4'>
+                      <span className='text-blue-500 font-semibold text-3xl'>Test</span>
                       <span className='bg-blue-500 text-white text-sm py-2 px-4 rounded-full '>{activeQuestion + 1}/{questions.length}</span>
                     </div>
                     <p className='mb-10'>Durıs juwaptı belgileń</p>
