@@ -67,7 +67,7 @@ const MoreButtonsQuiz = () => {
                     </div>
                     <p className='mb-10'>Durıs juwaptı belgileń</p>
                     <p>{question}</p>
-                    <div className='flex items-center flex-wrap w-1/2 gap-2 mb-10 mt-6'>
+                    <div className='flex items-center flex-wrap lg:w-1/2 gap-2 mb-10 mt-6'>
                       {
                         choices.map((answer, index) => (
                           <button className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} px-4 py-2 rounded ${selectedAnswerIndex === index  && 'border-4 border-blue-400'} ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : 'bg-[#D9D9D9]'}`} key={index} onClick={() => onAnswerSelected(answer, index)}>{answer}</button>

@@ -65,7 +65,7 @@ export const imageQuiz = {
     questions: [
         {
             image: "Bill-Gates-2011.png",
-            question: 'Súwrettegi adamnıń atı familiyası durıs keltirilgen varianttı qaysı?',
+            question: 'Súwrettegi adamnıń atı familiyası durıs keltirilgen variant qaysı?',
             choices: ['Stiv Jobs', 'Ilon Mask', 'Bill Geyts', 'Durıs juwap joq'],
             correctAnswer: 'Bill Geyts',
         },
