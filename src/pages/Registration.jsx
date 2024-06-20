@@ -39,7 +39,7 @@ const Registration = () => {
                     <label htmlFor="remember" className='ms-2'>Men <a href="#" className='hover:underline text-blue-600'>shártlerge</a> razıman hám olardı qabıl etemen.</label>
                 </div>
             </div>
-            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Create Account</button>
+            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Akkount jaratıw</button>
             <p className='mt-2'>Akkountıńız bar ma? <Link to="/login" className='hover:underline text-blue-600'>Profilge kiriw</Link></p>
         </form>
     </div>

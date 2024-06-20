@@ -27,7 +27,7 @@ const Login = () => {
                     <label htmlFor="remember" className='ms-2'>Login & Paroldi eslep qalıw</label>
                 </div>
             </div>
-            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Login</button>
+            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Kiriw</button>
             <p className='mt-2'>Akkountıńız joq pa? <Link to="/registration" className='hover:underline text-blue-600'>Akkount jaratıń</Link></p>
         </form>
     </div>
