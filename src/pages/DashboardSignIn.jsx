@@ -116,7 +116,7 @@ const DashboardSignIn = () => {
                       <div className='flex justify-between py-4'>
                         <div>
                           <p className='nunito-font font-semibold'>Kasb:</p>
-                          <p className='font-semibold text-3xl'>Oquvchi</p>
+                          <p className='font-semibold text-3xl'>O'quvchi</p>
                         </div>
                         <div>
                           <p className='nunito-font font-semibold'>Jinsi:</p>
