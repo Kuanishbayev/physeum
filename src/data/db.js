@@ -3,19 +3,19 @@ export const quiz = {
     perQuestionScore: 5,
     questions: [
         {
-            question: 'Which function is used to serialize an object into a JSON string in Javascript?',
-            choices: ['stringify()', 'parse()', 'convert()', 'None of the above'],
+            question: 'JavaScript-te qaysı metod JSON-dı string maǵlıwmat túrine konvertaciyalaw ushın isletiledi?',
+            choices: ['stringify()', 'parse()', 'convert()', 'Durıs juwap joq'],
             correctAnswer: 'stringify()',
         },
         {
-            question: 'Which of the following keywords is used to define a variable in Javascript?',
-            choices: ['var', 'let', 'var and let', 'None of the above'],
-            correctAnswer: 'var and let',
+            question: 'JavaScript tilinde qaysı gilt sóz ózgeriwshini járiyalawda isletiledi?',
+            choices: ['var', 'let', 'var hám let', 'Durıs juwap joq'],
+            correctAnswer: 'var hám let',
         },
         {
-            question: 'Which of the following methods can be used to display data in some form using Javascript?',
-            choices: ['document.write()', 'console.log()', 'window.alert', 'All of the above'],
-            correctAnswer: 'All of the above',
+            question: 'JavaScript tilinde qaysı kod dizbegi maǵlıwmattı shıǵarıw ushın isletiledi?',
+            choices: ['document.write()', 'console.log()', 'window.alert', 'Hámme juwap durıs'],
+            correctAnswer: 'Hámme juwap durıs',
         }
     ]
 }
@@ -26,18 +26,18 @@ export const trueFalseQuiz = {
     questions: [
         {
             question: '4 + 4 = 8',
-            choices: ['True', 'False'],
-            correctAnswer: 'True',
+            choices: ['Durıs', 'Qáte'],
+            correctAnswer: 'Durıs',
         },
         {
             question: 'Apple = Shiye',
-            choices: ['True', 'False'],
-            correctAnswer: 'False',
+            choices: ['Durıs', 'Qáte'],
+            correctAnswer: 'Qáte',
         },
         {
             question: '"1" === 1',
-            choices: ['True', 'False'],
-            correctAnswer: 'False',
+            choices: ['Durıs', 'Qáte'],
+            correctAnswer: 'Qáte',
         }
     ]
 }
@@ -47,14 +47,14 @@ export const moreButtonsQuiz = {
     perQuestionScore: 5,
     questions: [
         {
-            question: 'They are interested __ our project.',
-            choices: ['in', 'the', 'effective', 'talk', 'afford', 'air', 'glasses', 'port', 'teach', 'form'],
-            correctAnswer: 'in',
+            question: 'Olar bizlerdiń joybarımızǵa __.',
+            choices: ['qızıqtı', 'alma', 'effektiv', 'aytıw', 'kompyuter', 'hawa', 'aynalar', 'port', 'úyretiw', 'forma'],
+            correctAnswer: 'qızıqtı',
         },
         {
-            question: 'Hello __!',
-            choices: ['world', 'baby', 'football', 'ball', 'ice', 'mouse', 'horse'],
-            correctAnswer: 'world',
+            question: 'Sálem __!',
+            choices: ['dúnya', 'bala', 'futbol', 'top', 'muz', 'klaviatura', 'at'],
+            correctAnswer: 'dúnya',
         }
     ]
 }
@@ -65,13 +65,13 @@ export const imageQuiz = {
     questions: [
         {
             image: "Bill-Gates-2011.png",
-            question: 'Who is that person?',
-            choices: ['Steve Jobs', 'Elon Musk', 'Bill Gates', 'None of the above'],
-            correctAnswer: 'Bill Gates',
+            question: 'Súwrettegi adamnıń atı familiyası durıs keltirilgen varianttı qaysı?',
+            choices: ['Stiv Jobs', 'Ilon Mask', 'Bill Geyts', 'Durıs juwap joq'],
+            correctAnswer: 'Bill Geyts',
         },
         {
             image: "elon-musk.webp",
-            question: 'Tag the social network of the person in the picture?',
+            question: 'Súwrettegi adamǵa tiyisli social tarmaq qaysı?',
             choices: ['Instagram', 'X', 'Facebook', 'VK'],
             correctAnswer: 'X',
         }
@@ -79,7 +79,7 @@ export const imageQuiz = {
 }
 
 export const matchingPairWordsQuiz = {
-    topic: 'Image quiz',
+    topic: 'Matching pair words quiz',
     perQuestionScore: 5,
     questions: [
         {

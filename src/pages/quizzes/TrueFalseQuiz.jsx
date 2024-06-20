@@ -62,10 +62,10 @@ const TrueFalseQuiz = () => {
                 !showResult ? (
                   <>
                     <div className='flex justify-between items-center'>
-                      <span className='text-blue-500 font-semibold text-3xl mb-4'>Quiz</span>
+                      <span className='text-blue-500 font-semibold text-3xl mb-4'>Test</span>
                       <span className='bg-blue-500 text-white text-sm py-2 px-4 rounded-full '>{activeQuestion + 1}/{questions.length}</span>
                     </div>
-                    <p className='mb-10'>Choose the correct answer</p>
+                    <p className='mb-10'>Durıs juwaptı belgileń</p>
                     <p>{question}</p>
                     <div className='flex justify-center items-center gap-2 mb-10 mt-6'>
                       {
@@ -83,20 +83,20 @@ const TrueFalseQuiz = () => {
                     </div>
                     <div className='flex justify-end'>
                       <button className='bg-gray-300 px-4 py-2 rounded-full disabled:opacity-60 disabled:cursor-not-allowed' disabled={selectedAnswerIndex === null} onClick={onClickNext}>
-                        {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
+                        {activeQuestion === questions.length - 1 ? 'Juwmaqlaw' : 'Keyingi'}
                       </button>
                     </div>
                   </>
                 ) : (
                   <div className='flex flex-col gap-2 bg-white rounded p-4'>
-                    <h3 className='font-bold text-lg'>Result</h3>
+                    <h3 className='font-bold text-lg'>Nátiyje</h3>
                     <div className='border-b border-stone-500 pb-2'>
-                        <p className='flex justify-between gap-10'>Total Questions: <span className='font-bold'>{questions.length}</span></p>
-                        <p className='flex justify-between gap-10'>Total Score: <span className='font-bold'>{result.score}</span></p>
-                        <p className='flex justify-between gap-10'>Correct Answers: <span className='font-bold text-green-500'>{result.correctAnswers}</span></p>
-                        <p className='flex justify-between gap-10'>Wrong Answers: <span className='font-bold text-red-500'>{result.wrongAnswers}</span></p>
+                        <p className='flex justify-between gap-10'>Barlıq sorawlar: <span className='font-bold'>{questions.length}</span></p>
+                        <p className='flex justify-between gap-10'>Ulıwma ball: <span className='font-bold'>{result.score}</span></p>
+                        <p className='flex justify-between gap-10'>Durıs juwaplar: <span className='font-bold text-green-500'>{result.correctAnswers}</span></p>
+                        <p className='flex justify-between gap-10'>Qáte juwaplar: <span className='font-bold text-red-500'>{result.wrongAnswers}</span></p>
                     </div>
-                    <button className='self-end bg-gray-500 px-4 py-2 rounded text-white' onClick={() => location.reload()}>Restart</button>
+                    <button className='self-end bg-gray-500 px-4 py-2 rounded text-white' onClick={() => location.reload()}>Qayta baslaw</button>
                   </div>
                 )
               }
