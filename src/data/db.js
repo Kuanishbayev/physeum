@@ -102,3 +102,10 @@ export const matchingPairWordsQuiz = {
         },
     ]
 }
+
+export const accounts = [
+    {
+        login: "admin@example.com",
+        password: "12345678"
+    }
+]
