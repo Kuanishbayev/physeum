@@ -70,7 +70,7 @@ const TrueFalseQuiz = () => {
                     <div className='flex justify-center items-center gap-2 mb-10 mt-6'>
                       {
                         choices.map((answer, index) => (
-                          <button className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} px-4 py-2 rounded w-40 h-20 text-2xl ${selectedAnswerIndex === index  && 'border-4 border-blue-400'} ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : 'bg-[#D9D9D9]'}`} key={index} onClick={() => onAnswerSelected(answer, index)}>{answer}</button>
+                          <button className={`${selectedAnswerIndex !== null ? 'cursor-not-allowed' : 'cursor-pointer'} px-4 py-2 rounded md:w-40 md:h-20 md:text-2xl ${selectedAnswerIndex === index  && 'border-4 border-blue-400'} ${choices.indexOf(correctAnswer) !== index && selectedAnswerIndex === index  ? 'bg-red-500' : selectedAnswerIndex === index ? 'bg-green-500' : showCorrect && choices.indexOf(correctAnswer) === index ? 'bg-green-500' : 'bg-[#D9D9D9]'}`} key={index} onClick={() => onAnswerSelected(answer, index)}>{answer}</button>
                         ))
                       }
                     </div>
