@@ -9,13 +9,13 @@ const Navbar = () => {
             <div className='text-[#012970] font-semibold text-2xl mr-48'>Physeum</div>
             <FiMenu fill='#012970' size={30} />
             <label className='ml-2 flex items-center rounded-md border-2 overflow-hidden w-[320px]'>
-                <input type="text" placeholder='Izlew' className='outline-none p-2 grow' />
+                <input type="text" placeholder='Izlash' className='outline-none p-2 grow' />
                 <BsSearch fill='#012970' className='mr-2' />
             </label>
         </div>
         <div>
-            <button className='bg-[#0D6EFD] px-5 py-2.5 rounded-md text-white mr-5'>Dizimnen ótiw</button>
-            <button className='bg-[#6C757D] px-5 py-2.5 rounded-md text-white'>Kiriw</button>
+            <button className='bg-[#0D6EFD] px-5 py-2.5 rounded-md text-white mr-5'>Ro'yxatdan o'tish</button>
+            <button className='bg-[#6C757D] px-5 py-2.5 rounded-md text-white'>Kirish</button>
         </div>
     </nav>
   )

@@ -4,14 +4,14 @@ const Registration = () => {
   return (
     <div className='grid place-content-center min-h-screen'>
         <form className='p-4 shadow-[0_0_30px_0_#0129701A] rounded-[8px] lg:min-w-[408px]'>
-            <p className='text-[#012970] text-2xl text-center pb-2 pt-4 font-medium'>Akkount jaratıw</p>
-            <p className='text-center pb-4'>Akkount jaratıw ushın jeke maǵlıwmatlarıńızdı kiritiń</p>
+            <p className='text-[#012970] text-2xl text-center pb-2 pt-4 font-medium'>Akkaunt yaratish</p>
+            <p className='text-center pb-4'>Akkaunt yaratish uchun shaxsiy ma'lumotlaringizni kiriting</p>
             <div className='mb-4'>
-                <label htmlFor="firstName" className='block mb-2'>Atıńız</label>
+                <label htmlFor="firstName" className='block mb-2'>Ismingiz</label>
                 <input type="text" id='firstName' className='bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 ' />
             </div>
             <div className='mb-4'>
-                <label htmlFor="lastName" className='block mb-2'>Familiyańız</label>
+                <label htmlFor="lastName" className='block mb-2'>Familiyangiz</label>
                 <input type="text" id='lastName' className='bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 ' />
             </div>
             <div className='mb-4'>
@@ -19,7 +19,7 @@ const Registration = () => {
                 <input type="email" id='email' className='bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 block w-full p-2.5 ' />
             </div>
             <div className='mb-4'>
-                <label htmlFor="username" className='block mb-2'>Paydalanıwshı atı</label>
+                <label htmlFor="username" className='block mb-2'>Foydalanuvchi nomi</label>
                 <div className='flex'>
                     <span className='inline-flex items-center px-3 text-sm bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md'>
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,11 +36,11 @@ const Registration = () => {
             <div className='flex items-center mb-4'>
                 <div className='flex items-center'>
                     <input id="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" />
-                    <label htmlFor="remember" className='ms-2'>Men <a href="#" className='hover:underline text-blue-600'>shártlerge</a> razıman hám olardı qabıl etemen.</label>
+                    <label htmlFor="remember" className='ms-2'>Men <a href="#" className='hover:underline text-blue-600'>shartlarga</a> roziman va ularni qabul qilaman.</label>
                 </div>
             </div>
-            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Akkount jaratıw</button>
-            <p className='mt-2'>Akkountıńız bar ma? <Link to="/login" className='hover:underline text-blue-600'>Profilge kiriw</Link></p>
+            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4 '>Akkaunt yaratish</button>
+            <p className='mt-2'>Akkauntingiz bor mi? <Link to="/login" className='hover:underline text-blue-600'>Profilga kirish</Link></p>
         </form>
     </div>
   )

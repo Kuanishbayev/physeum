@@ -10,11 +10,11 @@ const Sidebar = () => {
         <ul className='flex flex-col gap-4 p-6'>
             <li className='flex items-center gap-2'>
                 <RxDashboard className='text-[#899BBD]' />
-                <span className='text-[#012970] nunito-font font-semibold'>Bas bet</span>
+                <span className='text-[#012970] nunito-font font-semibold'>Bosh sahifa</span>
             </li>
             <li className='flex items-center gap-2'>
                 <BsGraphUp fill='#899BBD' />
-                <span className='text-[#012970] nunito-font font-semibold'>Tayarlanıw</span>
+                <span className='text-[#012970] nunito-font font-semibold'>Tayyorlanish</span>
             </li>
             <li className='flex items-center gap-2'>
                 <FaDatabase fill='#899BBD' />
@@ -26,7 +26,7 @@ const Sidebar = () => {
             </li>
             <li className='flex items-center gap-2'>
                 <LuSettings stroke='#899BBD' />
-                <span className='text-[#012970] nunito-font font-semibold'>Sazlawlar</span>
+                <span className='text-[#012970] nunito-font font-semibold'>Sozlamalar</span>
             </li>
         </ul>
     </div>

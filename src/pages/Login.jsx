@@ -21,10 +21,10 @@ const Login = () => {
     <div className='grid place-content-center min-h-screen'>
         <Toaster />
         <form className='p-4 shadow-[0_0_30px_0_#0129701A] rounded-[8px] lg:w-[408px]' onSubmit={handleSubmit}>
-            <p className='text-[#012970] text-2xl text-center pb-2 pt-4 font-medium'>Akkountqa kiriw</p>
-            <p className='text-center pb-4'>Profilińizge kiriw ushın Paydalanıwshı atıńızdı & paroldi kiritiń</p>
+            <p className='text-[#012970] text-2xl text-center pb-2 pt-4 font-medium'>Akkauntga kirish</p>
+            <p className='text-center pb-4'>Profilingizga kirish uchun Foydalanuvchi nomingizni & parolni kiriting</p>
             <div className='mb-4'>
-                <label htmlFor="username" className='block mb-2'>Paydalanıwshı atı</label>
+                <label htmlFor="username" className='block mb-2'>Foydalanuvchi nomi</label>
                 <div className='flex'>
                     <span className='inline-flex items-center px-3 text-sm bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md'>
                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,11 +41,11 @@ const Login = () => {
             <div className='flex items-center mb-4'>
                 <div className='flex items-center'>
                     <input id="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" />
-                    <label htmlFor="remember" className='ms-2'>Login & Paroldi eslep qalıw</label>
+                    <label htmlFor="remember" className='ms-2'>Login & Parolni eslab qolish</label>
                 </div>
             </div>
-            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4'>Kiriw</button>
-            <p className='mt-2'>Akkountıńız joq pa? <Link to="/registration" className='hover:underline text-blue-600'>Akkount jaratıń</Link></p>
+            <button type='submit' className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full py-4'>Kirish</button>
+            <p className='mt-2'>Akkauntingiz yo'q mi? <Link to="/registration" className='hover:underline text-blue-600'>Akkaunt yaratish</Link></p>
         </form>
     </div>
   )
