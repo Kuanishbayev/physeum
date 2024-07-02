@@ -160,7 +160,7 @@ const MatchingPairWordsQuiz = () => {
                       }
                     </div>
                     <div className='flex justify-end'>
-                      <button className='bg-gray-300 px-4 py-2 rounded-full disabled:opacity-60 disabled:cursor-not-allowed' disabled={foundedWords.length === 0 || foundedWords.length % 8 !== 0} onClick={onClickNext}>
+                      <button className='bg-gray-300 px-4 py-2 rounded-full disabled:opacity-60 disabled:cursor-not-allowed' disabled={foundedWords.length === 0 || foundedWords.length % (leftSideWords.length + rightSideWords.length) !== 0} onClick={onClickNext}>
                         {activeQuestion === questions.length - 1 ? 'Juwmaqlaw' : 'Keyingi'}
                       </button>
                     </div>
